@@ -8,6 +8,7 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Salary</th>
+        <th>Department</th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,8 @@
         <td>{{employee.email}}</td>
         <td>{{employee.phone}}</td>
         <td>{{employee.salary}}</td>
+        <td>{{employee.department}}</td>
+        <td><a [routerLink]="['/employees','edit',employee.id]">View</a></td>
       </tr>
     </tbody>
   </table>
